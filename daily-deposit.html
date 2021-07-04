@@ -82,7 +82,7 @@
                 <tr class="info" style="background-color: #017393; color: aliceblue;">
                   <th>DDS Amount</th>
                   <th>Maturity Ammount(180 days-5%)</th>
-                  <th>Maturity Ammount(270 days-5%)</th>
+                  <th>Maturity Ammount(270 days-5.5%)</th>
                   <th>Maturity Ammount(365 days-7%)</th>
                 </tr>
                 <tr>
@@ -378,6 +378,10 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
+        $('.navbar-nav>li>a').on('click', function ()
+        {
+          $('.navbar-collapse').collapse('hide');
+        });
       </script>
   </body>
 
