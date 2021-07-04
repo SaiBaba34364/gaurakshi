@@ -8,7 +8,7 @@ html{
 }
 body{
     padding:0;
-    margin:0;   
+    margin:0;
     background-color: #ccc;
 }
 .container{
@@ -133,7 +133,7 @@ and (-webkit-device-pixel-ratio: 3){
             -webkit-transform: rotateY(360deg);
     }
 }
-h2{
+h4{
     position:relative;
     letter-spacing: 3px;
     font-family: Arial;
@@ -153,10 +153,14 @@ h2{
         color:#fff;
     }
 }
+.no-wrap{
+    white-space: nowrap;
+}
 .top-head  h5{
     color:#000;
     letter-spacing: 3px;
 }
+
 /*UDAAN HEADER ENDS*/
 
 /*NAVBAR STARTS*/
@@ -176,7 +180,7 @@ h2{
 }
 .nav-item{
     font-weight: 600;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-link{
@@ -184,11 +188,17 @@ h2{
     color:#fff;
     border-radius: 5px;
     margin: 0px 10px;
-
 }
 .navbar-light .navbar-nav .nav-item .nav-link{
     color: #262626;
     padding: 5px 15px;
+}
+@media screen 
+and (max-width:1358px)
+{
+    #menu li{
+        font-size: 10px;
+    }
 }
 /*NAVBAR ENDS*/
 
@@ -199,9 +209,10 @@ h2{
     margin: 10px auto;
     position: relative;
   }
-.block{
-    padding-top:40px;
+.block, #mcontainer{
+    padding-top:50px;
 }
+
 .heading
 {
       color:#fff;
@@ -689,7 +700,6 @@ hr{
 th{
     position: sticky;
     top: 0;
-    z-index: 5;
     background-color:#017393 ;
 }
 /* sticky tables ends */
