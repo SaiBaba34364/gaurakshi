@@ -51,34 +51,34 @@
               <a class="nav-link" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT US</a>
+              <a class="nav-link" href="#about" data-bs-toggle="collapse">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#infoslider">WHY US</a>
+              <a class="nav-link" href="#infoslider" data-bs-toggle="collapse">WHY US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#schemes-slider">SCHEMES AND PLANS</a>
+              <a class="nav-link" href="#schemes-slider" data-bs-toggle="collapse">SCHEMES AND PLANS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="loans.html">LOANS</a>
+              <a class="nav-link" href="loans.html" data-bs-toggle="collapse">LOANS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#byelaws">BYE LAWS</a>
+              <a class="nav-link" href="#byelaws" data-bs-toggle="collapse">BYE LAWS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ourusp">OUR USP</a>
+              <a class="nav-link" href="#ourusp" data-bs-toggle="collapse">OUR USP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#UpcomingServices">UPCOMING SERVICES</a>
+              <a class="nav-link" href="#UpcomingServices" data-bs-toggle="collapse">UPCOMING SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#career">CAREER</a>
+              <a class="nav-link" href="#career" data-bs-toggle="collapse">CAREER</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ourteamm">OUR TEAM</a>
+              <a class="nav-link" href="#ourteamm" data-bs-toggle="collapse">OUR TEAM</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#fcontainer">CONTACT US</a>
+              <a class="nav-link" href="#fcontainer" data-bs-toggle="collapse">CONTACT US</a>
             </li>
           </ul>
         </div>
@@ -96,7 +96,7 @@
       <div id="top-head" class="row text-center">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div id="logoback"><img class="logo" src="assets/images/logoo.png" alt="logo here"></div>
-          <h2>Udaan Credit and Thrift Co-Operative Society</h2>
+          <h4>Udaan Credit and Thrift <span class="no-wrap">co-operative</span> Society</h4>
           <h5 style="letter-spacing: 5px;"><b>Approved By Central Government Of India</b></h5>
           <h5 style="letter-spacing: 1px;"><b>Reg. No. RCS/2019-20/1795</b></h5><br><br>
           <h1>WELCOME TO THE UDAAN FAMILY!!!</h1>
@@ -742,6 +742,10 @@
             $(".nav-item").removeClass("active");
             $(this).addClass("active");
           });
+        });
+        $('.navbar-nav>li>a').on('click', function ()
+        {
+          $('.navbar-collapse').collapse('hide');
         });
       </script>
   </body>
